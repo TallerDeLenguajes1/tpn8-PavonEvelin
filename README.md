@@ -8,7 +8,7 @@ La diferencia entre una List<T> y una LinkedList<T> es en cuanto a eficiencia, y
   
  - **Beneficios de usar una biblioteca, por que pondria una clase en una biblioteca y cuando agregaria directamente la clase en su proyecto**
  
- Las bibliotecas de clases (class library) se utilizan cuando queremos que una o más clases puedan ser reutilizadas en diferentes proyectos, en caso contrario, sólo agregamos la clase al proyecto en el que estamos trabajando.
+ Las bibliotecas de clases (class library) se utilizan cuando queremos que una o más clases puedan ser reutilizadas en diferentes proyectos dentro de una misma solución, en caso contrario, sólo agregamos la clase al proyecto en el que estamos trabajando.
  
  - **¿Cómo se agrega la referencia a una biblioteca de clase en su proyecto?**
  
