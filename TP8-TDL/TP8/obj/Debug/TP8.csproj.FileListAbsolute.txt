@@ -1,0 +1,10 @@
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\bin\Debug\TP8.exe.config
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\bin\Debug\TP8.exe
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\bin\Debug\TP8.pdb
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.csprojAssemblyReference.cache
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.Form1.resources
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.Properties.Resources.resources
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.csproj.GenerateResource.cache
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.csproj.CoreCompileInputs.cache
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.exe
+C:\RepoGit\tpn8-PavonEvelin\TP8-TDL\TP8\obj\Debug\TP8.pdb
