@@ -57,6 +57,8 @@
             this.Historial.Name = "Historial";
             this.Historial.Size = new System.Drawing.Size(299, 212);
             this.Historial.TabIndex = 0;
+            this.Historial.SelectedIndexChanged += new System.EventHandler(this.Historial_SelectedIndexChanged);
+            this.Historial.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Historial_MouseDoubleClick);
             // 
             // btn1
             // 

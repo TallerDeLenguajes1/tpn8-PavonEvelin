@@ -9,9 +9,10 @@ namespace TP8
     public class Calculadora
     {
         private float numero1f, numero2f;
-
+        private string fecha;
         public float Numero1f { get => numero1f; set => numero1f = value; }
         public float Numero2f { get => numero2f; set => numero2f = value; }
+        public string Fecha { get => fecha; set => fecha = value; }
 
         public Calculadora()
         {
@@ -22,6 +23,7 @@ namespace TP8
         {
             numero1f = num1f;
             numero2f = num2f;
+            fecha = System.DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         public float Suma()
@@ -43,5 +45,7 @@ namespace TP8
         {
             return numero1f / numero2f;
         }
+
+
     }
 }

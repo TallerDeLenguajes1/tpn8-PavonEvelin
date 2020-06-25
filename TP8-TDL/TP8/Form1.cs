@@ -13,14 +13,14 @@ namespace TP8
     public partial class Form1 : Form
     {
         Calculadora miCalculadora;
-        List<Calculadora> historial;
+        List<string> historial;
         float numero1f, numero2f;
         char operador;
         public Form1()
         {
             InitializeComponent();
             miCalculadora = new Calculadora();
-            historial = new List<Calculadora>();
+            historial = new List<string>();
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace TP8
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
-        { 
+        {
             string pantalla = TBPantalla.Text;
             for (int i = 0; i < pantalla.Length; i++)
             {
@@ -125,24 +125,26 @@ namespace TP8
             switch (operador)
             {
                 case '+':
-                    resultado = miCalculadora.Suma().ToString();
-                    TBPantalla.Text += miCalculadora.Suma().ToString();
+                    //resultado = miCalculadora.Suma().ToString();
+                    //TBPantalla.Text += " = ";
+                    TBPantalla.Clear();
+                    TBPantalla.Text = miCalculadora.Suma().ToString();
                     break;
 
                 case '-':
-                    resultado = miCalculadora.Resta().ToString();
+                    TBPantalla.Clear();
                     TBPantalla.Text = miCalculadora.Resta().ToString();
                     break;
 
                 case '*':
-                    resultado = miCalculadora.Multiplicacion().ToString();
+                    TBPantalla.Clear();
                     TBPantalla.Text = miCalculadora.Multiplicacion().ToString();
                     break;
 
                 case '/':
                     if(numero2f != 0)
                     {
-                        resultado = miCalculadora.Division().ToString();
+                        TBPantalla.Clear();
                         TBPantalla.Text = miCalculadora.Division().ToString();
                     }
                     else
@@ -152,8 +154,21 @@ namespace TP8
                     
                     break;
             }
+            string elementoHistorial = miCalculadora.Fecha + " --> " + pantalla + " = " + TBPantalla.Text;
+            historial.Add(elementoHistorial);
+            Historial.DataSource = null;
+            Historial.DataSource = historial;
+        }
 
-            historial.Add();
+        private void Historial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Historial_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            historial.Clear();
+            Historial.DataSource = null;
         }
 
         private void Form1_Load(object sender, EventArgs e)
